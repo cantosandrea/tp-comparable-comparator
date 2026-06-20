@@ -2,6 +2,10 @@
 
 **Repositorio:** https://github.com/cantosandrea/tp-comparable-comparator
 
+**Integrantes:**
+- Aucachi Ortega, Rocio Valeria EISI1467 _ 44431436
+- Cantos Luciana Andrea EISI1468
+
  ## Commit Parte 1 — El problema
 
 # Pregunta 1: ¿Por qué Collections.sort() no compila cuando le pasamos una List<Estudiante>? ¿Qué contrato exige Java que nuestra clase no está cumpliendo?
