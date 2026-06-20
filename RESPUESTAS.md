@@ -1,10 +1,12 @@
 # RESPUESTAS.md — TP Comparable y Comparator
 
  ## Commit Parte 1 — El problema
- 
+
 # Pregunta 1: ¿Por qué Collections.sort() no compila cuando le pasamos una List<Estudiante>? ¿Qué contrato exige Java que nuestra clase no está cumpliendo?
 
 No compila porque Collections.sort() necesita que los objetos de la lista implementen la interfaz Comparable. Como Estudiante es una clase propia, Java no sabe cómo ordenarla — no sabe si ir por nombre, promedio o edad. El contrato que no se cumple es el método compareTo(T o), que es el que define el orden natural de una clase.
+
+## Commit Parte 2 — Comparable: el orden natural
 
 # Pregunta 2: ¿Por qué elegiste el atributo promedio como orden natural? ¿Qué pasaría si mañana un nuevo requisito pide ordenar por cantidadMateriasAprobadas? ¿Modificarías compareTo? ¿Qué consecuencias tendría?
 
