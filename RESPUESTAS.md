@@ -13,6 +13,8 @@ No compila porque Collections.sort() necesita que los objetos de la lista implem
 En un contexto universitario es la métrica mas representativa del rendimiento academico, el criterio más obvio para ordenar estudiantes.
 Si mañana aparece un requisito nuevo para ordenar por cantidadMateriasAprobadas, modificar compareTo() sería un problema: estaríamos cambiando el orden natural de la clase, lo que puede romper código que ya dependía de ese orden. Ademas, Comparable solo permite un único criterio, así que tendríamos que elegir uno y perder el otro. La solución correcta en ese caso sería usar Comparator, que permite definir múltiples criterios sin tocar la clase.
 
+## Commit Parte 3 — Comparator: estrategias externas
+
 # Pregunta 3: Comparable nos ata a un único criterio de ordenamiento. ¿Qué problemas de diseño introduce esto si nuestro sistema necesitara ordenar la misma lista de estudiantes de 4 formas distintas según el contexto? Relacioná tu respuesta con los principios de responsabilidad única (SRP) y abierto/cerrado (OCP).
 
 Si necesitáramos ordenar la lista de 4 formas distintas usando solo Comparable, tendríamos un problema grande: solo permite definir un único orden dentro de la clase. Cada vez que aparezca un criterio nuevo, habría que entrar a modificar Estudiante directamente, lo cual no es una buena práctica.
