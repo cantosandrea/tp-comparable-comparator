@@ -1,5 +1,6 @@
 # RESPUESTAS.md — TP Comparable y Comparator
 
+ ## Commit Parte 1 — El problema
  
 # Pregunta 1: ¿Por qué Collections.sort() no compila cuando le pasamos una List<Estudiante>? ¿Qué contrato exige Java que nuestra clase no está cumpliendo?
 
