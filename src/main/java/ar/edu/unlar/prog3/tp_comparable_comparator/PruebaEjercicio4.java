@@ -6,6 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PruebaEjercicio4 {
+
+    // Parte 3: Comparadores con lambda, Comparator.comparing() y referencias de método
     public static void main(String[] args) {
 
         List<Estudiante> lista = new ArrayList<>();

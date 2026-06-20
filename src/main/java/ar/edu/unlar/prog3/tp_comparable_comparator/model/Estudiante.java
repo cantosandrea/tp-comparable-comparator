@@ -38,6 +38,7 @@ public class Estudiante implements Comparable<Estudiante> {
         return Double.compare(other.getPromedio(), this.getPromedio());
     }
 
+    // Parte 2: Orden natural por promedio descendente usando Double.compare()
     @Override
     public String toString() {
         return "Estudiante{" +
